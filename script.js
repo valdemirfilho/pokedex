@@ -6,7 +6,6 @@ const bgColor = getComputedStyle(element).backgroundColor
 menus[0].style.backgroundColor = bgColor
 
 const beep = document.createElement('audio')
-beep.src = "sounds/button-31.mp3"
 
 function removeMenuAtivo() {
   const menuAtivo = document.querySelector('.ativo')
@@ -21,6 +20,11 @@ function removeCartaoVisivel() {
 
 menus.forEach((menu, index) => {
   menu.addEventListener('click', () => {
+    if (index === 0) {
+      beep.src = "sounds/pikachu.mp3"
+    } else {
+      beep.src = "sounds/button-31.mp3"
+    }
     beep.play()
     removeMenuAtivo()
     menu.classList.add('ativo')
