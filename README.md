@@ -7,7 +7,7 @@ Pokedex desenvolvida durante aulas do canal **devs em dobro** no youtube.
 * Animação dos Pokemons nos cards
 
 ## Visualização
-<video src="video/pokedex.mp4" type="video/mp4"></video>
+https://pokedex-dev-em-dobro.netlify.app/video/pokedex.mp4
 
 ## Site
 [https://pokedex-dev-em-dobro.netlify.app](https://pokedex-dev-em-dobro.netlify.app)
