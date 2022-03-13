@@ -10,6 +10,7 @@ ul {
 
 body {
   font-family: Poppins;
+  -webkit-tap-highlight-color: transparent;
 }
 
 main {
@@ -34,6 +35,10 @@ main {
 
 .cartao-pokemon__topo {
   padding: 30px 40px 0 40px;
+  background-image: url('imagens/pokebola.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 90%;
 }
 
 .cartao-pokemon__nome {
@@ -62,6 +67,7 @@ main {
 
 .cartao-pokemon__imagem img {
   max-height: 100%;
+  filter: drop-shadow(5px 8px 10px rgba(0, 0, 0, 0.3));
 }
 
 .cartao-pokemon__informacoes {
@@ -120,6 +126,7 @@ main {
 
 .tipo-dragao {
   background-color: #C29791;
+  background-color: #e6813d;
 }
 
 /**************/
@@ -140,9 +147,10 @@ main {
   padding: 0 5px;
   cursor: pointer;
   border-radius: 30px 0 0 30px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  box-shadow:  5px 5px 10px 1px rgba(100, 100, 111, 0.2);
   min-height: 70px;
   transition: 150ms;
+  user-select: none;
 }
 
 .menu__pokemon:hover {
@@ -152,6 +160,7 @@ main {
 .menu__pokemon img {
   width: 25%;
   border-radius: 50%;
+  filter: drop-shadow(5px 8px 10px rgba(0, 0, 0, 0.3));
 }
 
 .menu__pokemon.ativo {
@@ -181,6 +190,15 @@ main {
     width: 250px;
     height: 250px;
     margin: 0 auto;
+  }
+
+  .cartao-pokemon__informacoes h3 {
+    font-size: 16px;
+  }
+
+  .cartao-pokemon__informacoes ul li {
+    padding: 0 0 5px 0;
+    font-size: 13px;
   }
 
   .menu {
