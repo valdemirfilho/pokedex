@@ -31,7 +31,6 @@ main {
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   border-radius: 10px;
   display: none;
-  /* animation: up 300ms ease-out; */
 }
 
 .cartao-pokemon__topo {
@@ -127,8 +126,15 @@ main {
 }
 
 .tipo-dragao {
-  background-color: #C29791;
   background-color: #e6813d;
+}
+
+#bgsound {
+  /* visibility: hidden; */
+  position: absolute;
+  top: 10px;
+  left: calc(50vw - 120px);
+  width: 120px;
 }
 
 /**************/
@@ -165,9 +171,13 @@ main {
   filter: drop-shadow(5px 8px 10px rgba(0, 0, 0, 0.3));
 }
 
-.menu__pokemon.ativo {
-  background-color: #fa6668;
-}
+/* iframe { */
+/*     height: 0; */
+/* } */
+/* .menu__pokemon.ativo { */
+/*   background-color: #fa6668; */
+/* } */
+
 
 /************************/
 /**** RESPONSIVIDADE ****/
@@ -226,9 +236,11 @@ main {
 @keyframes up {
   from {
     opacity: 0;
-    transform: translateY(15px);
+    /* transform: translateY(15px); */
+    transform: scale3d(0.3, 0.3, 0.3)
+
   }
-  to {
+  50% {
     opacity: 1;
   }
 }
